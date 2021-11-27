@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  min-height: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+img {
+  display: block;
+}
+body .container {
+  width: 20%;
+  height: 42rem;
+  margin-inline: auto;
+  margin-top: 17rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#first {
+  width: 100%;
+}
+.container h1 {
+  margin: 1.6rem;
+  text-align: center;
+  font-weight: 900;
+}
+.container p {
+  margin: 1.6rem;
+  text-align: center;
+  margin-inline: 3rem;
+  font-weight: 700;
+  opacity: 50%;
+}
+.flex {
+  margin-inline: 1.6rem;
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 1.1rem;
+  border-radius: 10px;
+}
+.flex img {
+  width: 14%;
+
+  border-radius: 50%;
+}
+.flex .mid {
+  margin-right: 2.5rem;
+  margin-left: 0.55rem;
+  width: 50%;
+}
+#annual {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.right {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+}
+button {
+  display: block;
+  width: 80%;
+  margin-inline: 2.5rem;
+  margin-bottom: 1.5rem;
+  background-color: hsl(245, 100%, 51%);
+  font-family: inherit;
+  color: hsl(225, 100%, 98%);
+  padding: 9px;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#link {
+  text-decoration: none;
+  font-family: inherit;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1230px) {
+  body .container {
+    width: 25%;
+    height: 41rem;
+  }
+}
+@media (max-width: 1067px) {
+  .flex {
+    margin-bottom: 2.7rem;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 887px) {
+  body .container {
+    width: 35%;
+    height: 43.8rem;
+  }
+}
+@media (max-width: 649px) {
+  body .container {
+    width: 45%;
+    height: 42.9rem;
+  }
+}
+@media (max-width: 480px) {
+  body .container {
+    width: 55%;
+    height: 42.9rem;
+  }
+  #annual {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 394px) {
+  body .container {
+    width: 65%;
+  }
+}
+@media (max-width: 300px) {
+  body .container {
+    width: 85%;
+  }
+}
